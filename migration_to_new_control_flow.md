@@ -99,6 +99,23 @@ Angular v17 introduces a declarative control flow with new keywords:
 }
 ```
 
+### Extra: `@empty` block
+
+With the new control flow syntax, we can use the @empty block to handle the case where the list of items to iterate over is empty.
+
+```html
+<h1>List</h1>
+  @for (item of items; track item.id) {
+    <div>
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.text}}</p>
+    </div>
+  } @empty {
+    <p>No items available</p>
+  }
+```
+
+
 ---
 
 ## Automating Migration with VS Code Tasks
