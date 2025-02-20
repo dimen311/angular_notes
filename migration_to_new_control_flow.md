@@ -119,10 +119,12 @@ To automate the migration process for a single file in VS Code, you can set up a
 ```
 
 ### Running the Task
-1. Open the command palette in VS Code (`Ctrl + Shift + P` on Windows/Linux, `Cmd + Shift + P` on macOS).
-2. Search for `Tasks: Run Task` and select it.
-3. Choose **Angular: Migrate html to new control flow** from the list.
-4. The migration will run automatically on the selected file's directory.
+1. Open the template file (HTML) that you want to migrate to the new control flow; it must be open to apply the task migration.
+2. Open the command palette in VS Code (`Ctrl + Shift + P` on Windows/Linux, `Cmd + Shift + P` on macOS).
+3. Search for `Tasks: Run Task` and select it.
+4. Choose **Angular: Migrate html to new control flow** from the list.
+5. Choose Continue without scanning the task output from the list.   
+6. The migration will run automatically on the selected file's directory.
 
 ---
 
