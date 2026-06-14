@@ -1,6 +1,6 @@
 # Angular Signals: How We Rewrote Our App and Why This Is the Future
 
-I joined my current company about a year and a half ago, right when Angular Signals were just starting to gain real momentum. Massive credit goes to the creators of SolidJS—they were the ones who first popularized this concept, and the Angular team elegantly picked up the torch.
+I joined my current company about a year and a half ago, right when Angular Signals were just starting to gain real momentum. Massive credit goes to the creators of SolidJS-they were the ones who first popularized this concept, and the Angular team elegantly picked up the torch.
 
 The core idea behind signals is actually much older. Reactive observable values existed in Knockout way back in 2010, and the term "signal" itself was solidified in the S.js library. In their Signals RFC, the Angular team explicitly mentioned they drew inspiration from Preact, Vue, and Solid.js.
 
@@ -23,7 +23,7 @@ To be fair, RxJS brought us reactivity a long time ago, but it came with a lot o
 
 Because of this, we completely overhauled our architecture. Instead of building complex asynchronous chains of waits and locks, we simply fetch the data, show a loader, and relax with a cup of coffee while the UI reacts to the state change on its own.
 
-By the way, Angular now features `resource()` and `httpResource()` specifically for this—they expose the loading state, error, and the actual data directly as a signal.
+By the way, Angular now features `resource()` and `httpResource()` specifically for this - they expose the loading state, error, and the actual data directly as a signal.
 
 ---
 
@@ -56,7 +56,7 @@ With signals, this problem is gone. Calling `mySignal()` in a template is comple
 
 Despite all the magic of signals, here is my piece of advice: stop using the default change detection mechanism.
 
-With the release of Angular v22, the Angular team officially reflected the true nature of `ChangeDetectionStrategy.Default` by renaming it to `Eager` and deprecating the old name. It’s a perfect description—it eagerly checks the entire component tree at the slightest hiccup.
+With the release of Angular v22, the Angular team officially reflected the true nature of `ChangeDetectionStrategy.Default` by renaming it to `Eager` and deprecating the old name. It’s a perfect description - it eagerly checks the entire component tree at the slightest hiccup.
 
 Signals, on the other hand, provide **fine-grained reactivity** (surgically updating only the part of the DOM that changed). Stick with `OnPush` and move toward **Zoneless** applications, leaving eager checks in the past.
 
