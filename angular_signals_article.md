@@ -39,7 +39,7 @@ In software engineering, we rarely walk down just one path. Sometimes, you just 
 
 Remember one of the most common interview questions? *"Why shouldn't you call functions in an Angular HTML template?"*
 
-It used to be a strict taboo: every single Change Detection cycle would re-trigger the function, creating a massive performance bottleneck. We had to create extra variables in the component and bind them to the template, inflating our codebase.
+It used to be a strict taboo: every single Change Detection cycle would retrigger the function, creating a massive performance bottleneck. We had to create extra variables in the component and bind them to the template, inflating our codebase.
 
 With signals, this problem is gone. Calling `mySignal()` in a template is completely safe because it simply returns an already stored value in `O(1)` time. On top of that, a `computed` signal caches (memoizes) the result and only recalculates it when one of its dependencies actually changes. Reading a signal from a template is incredibly cheap, making everything lightning fast.
 
