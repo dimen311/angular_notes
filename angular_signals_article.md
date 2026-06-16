@@ -106,8 +106,8 @@ export class ShippingPickerComponent {
      loadExpressOptions() { this.shippingOptions.set([
      'Carrier Pigeon (Weather Permitting)', 
      'Trained Falcon (Slightly Aggressive)', 
-     'Yeeted via Catapult', 
-     'Delivered by Sonic the Hedgehog']); 
+     'Yeeted via Catapult (For robust packages only. Parachute does not always open, backup available for an extra fee)', 
+     'Delivered by Sonic the Hedgehog (If he takes damage, your package will scatter everywhere)']); 
      // selectedOption automatically resets to first one
       }
  }
