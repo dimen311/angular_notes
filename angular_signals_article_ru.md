@@ -66,8 +66,9 @@ effect(() => {
 
 Пример: Если у вас есть сигнал shippingOptions, который должен автоматически сбрасываться в значение по умолчанию всякий раз, когда меняется shippingOptions(), но при этом позволяет пользователю вручную выбирать и переопределять выбранную опцию, linkedSignal безупречно справляется с этой синхронизацией состояния без вложенных ручных эффектов.
 
-import { Component, signal, linkedSignal } from '@angular/core';
+
 ```typescript
+import { Component, signal, linkedSignal } from '@angular/core';
 @Component({
     selector: 'app-shipping-picker',
     template: `
