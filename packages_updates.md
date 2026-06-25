@@ -9,8 +9,6 @@ Every time a minor library patch is released, tools like Dependabot happily prom
 * **AI in the Hands of Bad Actors:** The scheme is simple: first, one neat PR arrives, then another, the author asks to become a maintainer, and a few months later, a backdoor appears in the codebase. This is exactly how the `xz utils` attack worked. In the AI era, this scenario has become an order of magnitude cheaper. Almost anyone can now generate convincing commits, respond competently to code reviews, and run multiple accounts in parallel. For solo maintainers who are happy to receive any help, this is the most underestimated threat right now.
 * **Google and the Monorepo:** Google stores almost all of its code in one giant monorepo. As a matter of principle, they vendor all external dependencies to guarantee that no external outage can halt their internal processes.
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/eb26626c-987d-4355-a0cf-6e827aa9a0e3" />
-
 ### The Illusion of Safe New Versions
 
 When we update, we hope everything will run like clockwork. We run our tests, they're green, and it seems safe to deploy to production. But the problem is that changes within a package can be at a level where passing tests simply won't save you.
