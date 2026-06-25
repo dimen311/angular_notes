@@ -28,7 +28,7 @@ Recent attacks have weaponized this exact vulnerability:
 - September 2025 (chalk, debug, & 17 others): A phished maintainer account was used to inject Web3 wallet-draining code into packages with over 2 billion combined weekly downloads—all delivered via postinstall.
 - March 2026 (Axios): A hijacked lead maintainer published versions with a "phantom dependency" that existed solely to trigger its postinstall hook and deploy a cross-platform Remote Access Trojan (RAT). The malicious package was never even imported into the Axios source code.
 
-The End of an Era: npm Makes Scripts Opt-In
+###The End of an Era: npm Makes Scripts Opt-In
 
 npm is the only remaining major package manager that runs dependency install scripts by default (pnpm v10+, Yarn Berry, Bun, and Deno already block them). But the security landscape has fundamentally shifted.
 
