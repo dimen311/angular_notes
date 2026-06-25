@@ -25,7 +25,7 @@ One of the most dangerous mechanisms in the Node.js ecosystem is install scripts
 
 Recent attacks have weaponized this exact vulnerability:
 - September 2025 (Shai-Hulud worm): A self-replicating postinstall payload compromised 500+ npm packages by stealing maintainer tokens and republishing infected versions.
-- September 2025 (chalk, debug, & 17 others): A phished maintainer account was used to inject Web3 wallet-draining code into packages with over 2 billion combined weekly downloads—all delivered via postinstall.
+- September 2025 (chalk, debug, & 17 others): A phished maintainer account was used to inject Web3 wallet-draining code into packages with over 2 billion combined weekly downloads, all delivered via postinstall.
 - March 2026 (Axios): A hijacked lead maintainer published versions with a "phantom dependency" that existed solely to trigger its postinstall hook and deploy a cross-platform Remote Access Trojan (RAT). The malicious package was never even imported into the Axios source code.
 
 ###The End of an Era: npm Makes Scripts Opt-In
